@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https:/maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'more.css')}}">
+</head>
+<body>
+    <h1 class="text-center">The Description Of Features <br><br>
+        <button><a href="{{url_for('index')}}" class="btn_back">Back</a></button>
+    </h1>
+    <div class="container">
+        <div class="row"> 
+            <!--team-0-->
+            <div class="col-lg-4">
+                <div class="our-team-main">
+                    <div class="team-front">
+                        <img src="{{ url_for('static', filename='general.jpeg') }}" alt="milk_images" height ="80" class="img-fluid" />
+                        <h3>Description Of General Features</h3>
+                    </div> 
+                    <div class="team-back">
+                        <span>
+                            Dataset ini terdiri dari 7 variabel independen yaitu pH, Suhu, Rasa, Bau, Lemak, Kekeruhan, dan Warna. Umumnya Grade atau Kualitas susu tergantung pada parameter. Parameter memainkan peran penting dalam analisis prediktif susu. Inspirasi : memanfaatkan pembelajaran mesin di industri susu.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!--team-0-->
+
+            <!--team-1-->
+            <div class="col-lg-4">
+                <div class="our-team-main">
+                    <div class="team-front">
+                        <img src="{{ url_for('static', filename='pH.jpg') }}" alt="ph_images" height ="80" class="img-fluid" />
+                        <h3>Power of Hydrogen (pH)</h3>
+                    </div> 
+                    <div class="team-back">
+                        <span>
+                            Umumnya susu segar memiliki pH sekitar 6,5-6,7. Bila nilai pH susu >6,7 biasanya diartikan terkena mastitis dan bila pH < 6,0 menunjukkan adanya kolostrum ataupun pembentukan bakteri. Kolom ini mendefinisikan PH alus susu yang berkisar antara 3 hingga 9,5 maks : 6,25 hingga 6,90
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!--team-1-->
+                
+            <!--team-2-->
+            <div class="col-lg-4">
+                <div class="our-team-main">
+                    <div class="team-front">
+                        <img src="{{ url_for('static', filename='tmp.png') }}" alt="Temperature" height ="30" class="img-fluid" />
+                        <h3>Temperature</h3>
+                    </div> 
+                    <div class="team-back">
+                        <span>
+                            Suhu ruang penyimpanan berpengaruh terhadap kualitas susu. Kolom ini mendefinisikan Suhu susu yang berkisar dari 34'C hingga 90'C maks : 34'C hingga 45,20'C
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!--team-2-->
+                
+            <!--team-3-->
+            <div class="col-lg-4">
+                <div class="our-team-main">
+                    <div class="team-front">
+                        <img src="{{ url_for('static', filename='taste.jpeg') }}" alt="taste_ofmilk" height ="30" class="img-fluid" />
+                        <h3>Taste</h3>
+                    </div>
+                    <div class="team-back">
+                        <span>
+                        Taste adalah rasa. Kolom ini mendefinisikan Rasa susu yang merupakan data kategori 0 (Buruk) atau 1 (Baik) maks : 1 (Baik)
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!--team-3-->
+                
+            <!--team-4-->
+            <div class="col-lg-4">
+                <div class="our-team-main">
+                    <div class="team-front">
+                        <img src="{{ url_for('static', filename='odor.jpeg') }}" alt="Odor" height ="30" class="img-fluid" />
+                        <h3>Odor</h3>
+                    </div>
+                    <div class="team-back">
+                        <span>
+                        Odor adalah bau. Kolom ini mendefinisikan Bau susu yang merupakan data kategori 0 (Buruk) atau 1 (Baik) maks : 0 (Buruk)
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!--team-4-->
+                
+            <!--team-5-->
+            <div class="col-lg-4">
+                <div class="our-team-main">
+                    <div class="team-front">
+                        <img src="{{ url_for('static', filename='full_fat.jpeg') }}" alt="Fat_ofmilk" height ="5" class="img-fluid" />
+                        <h3>Fat Milk</h3>
+                    </div>
+                    <div class="team-back">
+                        <span>
+                        Fat adalah lemak. Kolom ini mendefinisikan Bau susu yang merupakan data kategori 0 (Rendah) atau 1 (Tinggi) maks : 1 (Tinggi)
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!--team-5-->
+                
+            <!--team-6-->
+            <div class="col-lg-4">
+                <div class="our-team-main"> 
+                    <div class="team-front">
+                        <img src="{{ url_for('static', filename='turbidity.jpg') }}" alt="turbidity" height ="30" class="img-fluid" />
+                        <h3>Turbidity</h3>
+                    </div>
+                    <div class="team-back">
+                        <span>
+                        Turbidity adalah Kekeruhan. Kolom ini mendefinisikan Kekeruhan susu yang merupakan data kategorikal 0 (Rendah) atau 1 (Tinggi) maks : 1 (Tinggi)
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!--team-6-->
+
+            <!--team-7-->
+            <div class="col-md-4">
+                <div class="our-team-main"> 
+                    <div class="team-front">
+                        <img src="{{ url_for('static', filename='colour.jpg') }}" alt="colour_ofmilk" height ="30" class="img-fluid" />  
+                        <h3>Colour</h3>
+                    </div>
+                    <div class="team-back">
+                        <span>
+                            Warna air susu dapat berubah dari satu warna ke warna yang lain. Warna air susu yang sehat berkisar dari putih kebiruan hingga kuning keemasan. Kolom ini menentukan Warna susu yang berkisar dari 240 hingga 255 maks : 255
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!--team-7-->
+
+            <!--team-8-->
+            <div class="col-md-4">
+                <div class="our-team-main"> 
+                    <div class="team-front">
+                        <img src="{{ url_for('static', filename='class.png') }}" alt="class_target" height ="30" class="img-fluid" />  
+                        <h3>Class Target</h3>
+                    </div>
+                    <div class="team-back">
+                        <span>
+                            Kolom ini mendefinisikan Grade (Target) susu yang merupakan data kategori Dimana Rendah (Buruk) atau Sedang (Sedang) Tinggi
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!--team-8-->
+        </div>
+    </div>
+</body>
+</html>

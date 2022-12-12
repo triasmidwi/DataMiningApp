@@ -1,0 +1,3 @@
+#untuk menghentikan flask
+
+taskkill /f /im python.exe
